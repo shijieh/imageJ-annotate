@@ -10,4 +10,4 @@ run("Watershed");
 run("Watershed");
 run("Watershed");
 run("Analyze Particles...", "size=20-Infinity circularity=0.05-1.00 show=Overlay display clear");
-saveAs("Results", "/Users/shijie/Desktop/other/Sally Cell Counter/auto_count_demo/Results.csv");
+saveAs("Results", "./Fiji_data.csv");
