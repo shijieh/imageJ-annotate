@@ -1,0 +1,13 @@
+run("8-bit");
+//setAutoThreshold("Default no-reset");
+//run("Threshold...");
+setThreshold(0, 156, "raw");
+//setThreshold(0, 156);
+//setOption("BlackBackground", true);
+run("Convert to Mask");
+run("Fill Holes");
+run("Watershed");
+run("Watershed");
+run("Watershed");
+run("Analyze Particles...", "size=20-Infinity circularity=0.05-1.00 show=Overlay display clear");
+saveAs("Results", "/Users/shijie/Desktop/other/Sally Cell Counter/auto_count_demo/Results.csv");
